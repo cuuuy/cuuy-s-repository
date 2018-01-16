@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 th:text="${result}"></h1>
+	<table border="1px">
+		<tr>
+			<td>id</td>
+			<td>name</td>
+			<td>password</td>
+			<td>join_date</td>
+			<td>edit_date</td>
+			<td>profile</td>
+		</tr>
+		<tr th:each="list : ${List}">
+			<td th:text="${list.id}"></td>
+			<td th:text="${list.name}"></td>
+			<td th:text="${list.password}"></td>
+			<td th:text="${list.join_date}"></td>
+			<td th:text="${list.edit_date}"></td>
+			<td th:text="${list.profile}"></td>
+		</tr>
+		
+	</table>
+</body>
+</html>

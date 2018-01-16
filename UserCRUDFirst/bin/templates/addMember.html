@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/addMemberSuccess" enctype="multipart/form-data" method="post">
+	<table border="1px">
+		<tr>
+			<td>name</td>
+			<td>password</td>
+			<td>profile</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="name"/></td>
+			<td><input type="password" name="password"/></td>
+			<td><input type="file" name="profile"/></td>
+		</tr>
+	</table>
+		<input type="submit" value="맴버추가" />
+	</form>
+	<form action="/first">
+		<input type="submit" value="돌아가기" />
+	</form>
+</body>
+</html>
